@@ -19,4 +19,4 @@ jobs:
           script: |
             cd /home/ubuntu/Garden-Guard
             git pull origin main
-            docker compose up --build -d
+            sudo docker compose up --build -d
