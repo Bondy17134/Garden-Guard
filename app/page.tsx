@@ -1,7 +1,7 @@
 export default function Home() {
   return <main>
     <section className="hero" id="top">
-      <nav><a className="brand" href="#top">Garden <i>Guard</i></a><div className="nav-links"><a href="#sightings">Sightings</a><a href="#journal">Journal</a><a href="#about">About</a></div></nav>
+      <nav><a className="brand" href="#top">Garden <i>Guard</i></a><div className="nav-links"><a href="#sightings">Sightings</a><a href="#journal">Journal</a><a href="/updates">Project updates</a><a href="#about">About</a></div></nav>
       <div className="copy"><p className="eyebrow">After-dark garden observation</p><h1>Meet the neighbours who visit after midnight.</h1><p>Garden Guard is a small wildlife-monitoring experiment: a camera, curious local animals, and a better way to understand what happens around the garden while we sleep.</p><a className="button" href="#sightings">Explore the sightings <span>↓</span></a></div>
       <div className="moon" aria-hidden="true"/><div className="stars" aria-hidden="true">✦ · ✧ · ✦</div><p className="hero-note">Live from the garden bed</p>
     </section>
