@@ -1,0 +1,3 @@
+gardenguard.org {
+  reverse_proxy garden-guard:3000
+}
