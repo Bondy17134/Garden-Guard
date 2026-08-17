@@ -2,8 +2,7 @@ export default function Home() {
   return <main>
     <section className="hero" id="top">
       <nav><a className="brand" href="#top">Garden <i>Guard</i></a><div className="nav-links"><a href="#sightings">Sightings</a><a href="#journal">Journal</a><a href="/updates">Project updates</a><a href="#about">About</a></div></nav>
-      <div className="copy"><p className="eyebrow">AI-powered wildlife observation</p><h1>Meet the neighbours who visit after dark.</h1><p>Garden Guard uses computer vision to detect backyard wildlife, track behaviour over time, and reveal what happens in your garden while you&apos;re not watching.</p><a className="button" href="#sightings">Explore the sightings <span>&rarr;</span></a></div>
-      <p className="hero-note">Live from the garden bed</p>
+      <div className="hero-content"><div className="copy"><h1>AI-powered<br/>wildlife observation</h1><h2>Meet the neighbours who visit after dark</h2><p>Garden Guard uses computer vision to detect backyard wildlife, track behaviour over time, and reveal what happens in your garden when you&apos;re not watching.</p><a className="button" href="#sightings">Explore the Sightings <span>&rarr;</span></a></div><figure className="hero-image"><img src="/hero-wildlife-warm.png" alt="A possum on a branch above a bush turkey in the garden"/></figure></div>
     </section>
 
     <section className="sightings" id="sightings">
