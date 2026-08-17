@@ -1,16 +1,8 @@
 export default function Home() {
   return <main>
     <section className="hero" id="top">
-      <nav><a className="brand" href="#top">Garden <i>Guard</i></a><div className="nav-links"><a href="#sightings">Sightings</a><a href="#journal">Journal</a><a href="/updates">Project updates</a><a href="#about">About</a></div></nav>
-      <div className="hero-content"><div className="copy"><h1>AI-powered<br/>wildlife observation</h1><h2>Meet the neighbours who visit after dark</h2><p>Garden Guard uses computer vision to detect backyard wildlife, track behaviour over time, and reveal what happens in your garden when you&apos;re not watching.</p><a className="button" href="#sightings">Explore the Sightings <span>&rarr;</span></a></div><figure className="hero-image"><img src="/hero-wildlife-warm.png" alt="A possum on a branch above a bush turkey in the garden"/></figure></div>
-    </section>
-
-    <section className="sightings" id="sightings">
-      <header><p className="eyebrow">Field notes · Night one</p><h2>A possum visits the garden after dark.</h2><p>Real moments from the garden turn an ordinary camera into a growing record of the wildlife that shares this space.</p></header>
-      <div className="photo-grid">
-        <figure className="photo-card large"><img src="/possum-food-tray.jpg" alt="A possum standing at a food tray at night"/><figcaption><span>01</span> Midnight visitor · food tray</figcaption></figure>
-        <figure className="photo-card"><img src="/possum-carrot.jpg" alt="A possum eating a carrot in the garden at night"/><figcaption><span>02</span> Late snack · carrot encounter</figcaption></figure>
-      </div>
+      <nav><a className="brand" href="#top">Garden <i>Guard</i></a><div className="nav-links"><a href="#journal">Journal</a><a href="/updates">Project updates</a><a href="#about">About</a></div></nav>
+      <div className="hero-content"><div className="copy"><h1>AI-powered<br/>wildlife observation</h1><h2>Meet the neighbours who visit after dark</h2><p>Garden Guard uses computer vision to detect backyard wildlife, track behaviour over time, and reveal what happens in your garden when you&apos;re not watching.</p><a className="button" href="/updates">Explore project updates <span>&rarr;</span></a></div><figure className="hero-image"><img src="/hero-wildlife-warm.png" alt="A possum on a branch above a bush turkey in the garden"/></figure></div>
     </section>
 
     <section className="story" id="story"><div><p className="eyebrow">The beginning</p><h2>It started with my sister&apos;s plant and an overnight surprise.</h2></div><div className="story-detail"><p>My sister planted something new. By morning, it was gone. The likely culprit? A bold bush turkey from the nearby bushland. Rather than simply guessing, this project asks a better question: what is actually happening out there at night?</p><aside>“The garden is part of their neighbourhood too.”</aside></div></section>
