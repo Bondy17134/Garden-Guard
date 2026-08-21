@@ -63,11 +63,13 @@ body .about h2 {
   padding-top: 1rem;
 }
 
-.about .social.github {
+.about .social.github,
+.about .social.linkedin {
   color: #f7f3e9;
 }
 
-.about .social.github img {
+.about .social.github img,
+.about .social.linkedin img {
   filter: brightness(0) invert(1);
 }
 
