@@ -1,10 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
   const galleryRef = useRef<HTMLElement>(null);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const gallery = galleryRef.current;
@@ -37,7 +36,7 @@ export default function Home() {
 
   return <main>
     <section className="hero" id="top">
-      <header className="hero-header"><a className="mobile-header-logo" href="#top" aria-label="Garden Guard home"><img src="/garden-guard-logo.png" alt="Garden Guard shield logo"/></a><button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen((open) => !open)}><span className="sr-only">{menuOpen ? "Close" : "Open"} navigation</span><span aria-hidden="true"/></button><nav className={`hero-nav ${menuOpen ? "is-open" : ""}`} id="primary-navigation" aria-label="Primary navigation"><a href="#top" onClick={() => setMenuOpen(false)}>Home</a><a href="#story" onClick={() => setMenuOpen(false)}>How It Works</a><a className="header-logo" href="#top" aria-label="Garden Guard home"><img src="/garden-guard-logo.png" alt="Garden Guard shield logo"/></a><a href="/updates" onClick={() => setMenuOpen(false)}>Roadmap</a><a href="#about" onClick={() => setMenuOpen(false)}>About</a><a className="visit-project" href="/updates" onClick={() => setMenuOpen(false)}>Visit Project</a></nav></header>
+      <header className="hero-header"><a className="mobile-header-logo" href="#top" aria-label="Garden Guard home"><img src="/garden-guard-logo.png" alt="Garden Guard shield logo"/></a><nav className="hero-nav" aria-label="Primary navigation"><a href="#top">Home</a><a href="#story">How It Works</a><a className="header-logo" href="#top" aria-label="Garden Guard home"><img src="/garden-guard-logo.png" alt="Garden Guard shield logo"/></a><a href="/updates">Roadmap</a><a href="#about">About</a><a className="visit-project" href="/updates">Visit Project</a></nav></header>
       <div className="hero-content"><h1>Garden<br/>Guard</h1><p className="hero-summary">AI wildlife monitoring that helps us understand what visits the garden — before deciding what to protect.</p><a className="hero-scroll" href="#story">Scroll for more <span aria-hidden="true">↓</span></a></div>
     </section>
 
