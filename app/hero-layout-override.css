@@ -5,19 +5,22 @@
 .hero-nav a { letter-spacing: .06em; text-transform: uppercase; }
 
 .hero-content {
-  align-items: start;
-  grid-template-columns: minmax(0, 1fr);
-  gap: clamp(32px, 5vw, 88px);
+  align-items: end;
+  grid-template-columns: minmax(320px, 1fr) minmax(280px, 440px);
+  column-gap: clamp(72px, 12vw, 240px);
   padding-bottom: clamp(64px, 8vw, 126px);
   padding-top: clamp(10px, 1vw, 40px);
 }
 
-.hero .copy { max-width: 620px; }
+.hero-content .hero-summary {
+  margin: 0 0 .45rem;
+  max-width: 440px;
+}
 
 @media (max-width: 700px) {
   .hero-header .header-logo img { height: 58px; width: 58px; }
   .hero-header { align-items: center; display: flex; }
   .hero-nav { flex: 1; gap: 10px 15px; justify-content: center !important; margin-top: 0; }
-  .hero-content { gap: 36px; padding-top: 32px; }
-  .hero .copy { max-width: none; }
+  .hero-content { align-items: start; gap: 28px; grid-template-columns: 1fr; padding-top: 32px; }
+  .hero-content .hero-summary { margin: 0; max-width: none; }
 }
