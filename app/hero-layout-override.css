@@ -14,7 +14,7 @@
   padding: 30px clamp(32px, 3.5vw, 64px) 28px;
 }
 
-.hero h1 { font-size: clamp(7.5rem, 11vw, 13rem); line-height: .84; }
+.hero h1 { align-self: start; font-size: clamp(10rem, 14vw, 17rem); line-height: .98; margin-top: clamp(24px, 4vh, 52px); }
 
 .hero-content .hero-summary {
   color: #14281a !important;
@@ -46,7 +46,7 @@
 @media (max-width: 1100px) and (min-width: 701px) {
   .hero { height: 100svh; min-height: 620px; }
   .hero-content { column-gap: clamp(28px, 4vw, 48px); grid-template-columns: minmax(310px, 1fr) minmax(330px, 440px); }
-  .hero h1 { font-size: clamp(5.2rem, 10vw, 7.9rem); }
+  .hero h1 { align-self: end; font-size: clamp(5.2rem, 10vw, 7.9rem); line-height: .9; margin-top: 0; }
   .hero-scroll { grid-column: 2; justify-self: start; margin-top: 6px; }
 }
 
@@ -56,7 +56,7 @@
   .hero-header { align-items: center; display: flex; }
   .hero-nav { flex: 1; gap: 10px 15px; justify-content: center !important; margin-top: 0; }
   .hero-content { align-items: start; gap: 28px; grid-template-columns: 1fr; padding: 42px 24px 48px; }
-  .hero h1 { font-size: clamp(4.2rem, 19vw, 6.2rem); line-height: .86; }
+  .hero h1 { align-self: auto; font-size: clamp(4.2rem, 19vw, 6.2rem); line-height: .9; margin-top: 0; }
   .hero-content .hero-summary { margin: 0; max-width: none; }
   .hero-scroll { margin: 0; }
 }
