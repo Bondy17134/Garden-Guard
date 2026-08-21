@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Anton, Barlow, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./hero-override.css";
 import "./hero-mobile.css";
@@ -7,6 +7,8 @@ import "./story-override.css";
 import "./logo-override.css";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const anton = Anton({ variable: "--font-anton", subsets: ["latin"], weight: "400" });
+const barlow = Barlow({ variable: "--font-barlow", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://gardenguard.org"),
   title: "Garden Guard — AI-powered wildlife observation",
@@ -21,4 +23,4 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", title: "Garden Guard", description: "Meet the neighbours who visit after dark.", images: ["/og.png"] },
 };
-export default function RootLayout({children}:{children:React.ReactNode}) { return <html lang="en"><body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body></html>; }
+export default function RootLayout({children}:{children:React.ReactNode}) { return <html lang="en"><body className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} ${barlow.variable}`}>{children}</body></html>; }
