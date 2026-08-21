@@ -1,0 +1,72 @@
+/* The practical layer: recorded footage alongside the field camera. */
+.camera-showcase {
+  background: #fdb216;
+  overflow: hidden;
+  padding: clamp(48px, 6vw, 88px) clamp(24px, 7vw, 110px);
+  position: relative;
+}
+
+.camera-showcase::before,
+.camera-showcase::after {
+  border: 1px solid rgba(20, 40, 26, .18);
+  border-radius: 50%;
+  content: "";
+  height: clamp(170px, 22vw, 360px);
+  position: absolute;
+  width: clamp(170px, 22vw, 360px);
+}
+
+.camera-showcase::before { left: -9vw; top: -12vw; }
+.camera-showcase::after { bottom: -15vw; right: -8vw; }
+
+.camera-showcase-media {
+  align-items: center;
+  display: grid;
+  gap: clamp(28px, 5vw, 80px);
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1160px;
+  position: relative;
+  z-index: 1;
+}
+
+.camera-showcase-card { margin: 0; }
+
+.camera-showcase-card img,
+.camera-showcase-card video {
+  aspect-ratio: 16 / 9;
+  background: #14281a;
+  border: 1px solid rgba(20, 40, 26, .78);
+  border-radius: 22px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.camera-showcase-card img { object-position: center 60%; }
+.camera-showcase-card figcaption { color: #14281a; font-family: Barlow, var(--font-barlow), Arial, sans-serif; font-size: .76rem; font-weight: 600; letter-spacing: .1em; margin-top: 12px; text-transform: uppercase; }
+
+.camera-showcase-connector {
+  align-items: center;
+  color: #14281a;
+  display: flex;
+  font-size: 1.45rem;
+  height: 38px;
+  justify-content: center;
+  position: relative;
+  width: 44px;
+}
+
+.camera-showcase-connector::before,
+.camera-showcase-connector::after { border-top: 2px dotted rgba(20, 40, 26, .68); content: ""; left: -24px; position: absolute; right: -24px; }
+.camera-showcase-connector::before { top: 0; }
+.camera-showcase-connector::after { bottom: 0; }
+
+@media (max-width: 760px) {
+  .camera-showcase { padding: 42px 24px; }
+  .camera-showcase-media { gap: 30px; grid-template-columns: 1fr; }
+  .camera-showcase-connector { display: none; }
+  .camera-showcase-card img,
+  .camera-showcase-card video { border-radius: 16px; }
+}
