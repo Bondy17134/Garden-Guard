@@ -66,7 +66,7 @@
   .hero-header .header-logo img { height: 54px; width: 54px; }
   .hero-header { align-items: center; display: flex; justify-content: center; padding: 12px 24px 0; position: relative; }
   .mobile-header-logo { display: inline-flex; line-height: 0; }
-  .mobile-header-logo img { display: block; height: 56px; object-fit: contain; width: 56px; }
+  .mobile-header-logo img { display: block; height: 78px; object-fit: contain; width: 78px; }
   .hero-nav { display: none; }
   .hero-content { align-items: start; gap: 28px; grid-template-columns: 1fr; grid-template-rows: auto; padding: 42px 24px 48px; }
   .hero h1 { align-self: auto; font-size: clamp(5.3rem, 24vw, 8.2rem); grid-column: auto; grid-row: auto; line-height: .88; margin-top: 0; }
