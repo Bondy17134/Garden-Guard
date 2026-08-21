@@ -1,13 +1,16 @@
 /* Garden Guard's growing wildlife snapshot dataset. */
 .story { background: #d0dfc0; display: block; gap: 0; grid-template-columns: none; margin: 0; max-width: none; padding: 0; }
-.snapshot-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; max-width: none; width: 100%; }
-.snapshot-card { align-items: center; aspect-ratio: 1 / .86; display: flex; justify-content: center; margin: 0; overflow: hidden; padding: clamp(48px, 4vw, 64px); position: relative; }
+.snapshot-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; max-width: none; position: relative; width: 100%; }
+.snapshot-card { align-items: center; aspect-ratio: 1 / .86; display: flex; justify-content: center; margin: 0; overflow: hidden; padding: clamp(56px, 4.5vw, 72px); position: relative; }
 .snapshot-card-turkey { background: #d0dfc0; }
 .snapshot-card-possum { background: #f4e3a2; }
 .snapshot-card-turkey::before, .snapshot-card-possum::before { background-position: center; background-repeat: no-repeat; background-size: cover; content: ""; inset: 0; opacity: .32; pointer-events: none; position: absolute; }
 .snapshot-card-turkey::before { background-image: url("/leaves.png"); }
 .snapshot-card-possum::before { background-image: url("/chillies.png"); }
 .snapshot-card img { border: 1px solid #14281a; display: block; height: 100%; object-fit: cover; position: relative; width: 100%; z-index: 1; }
+.gallery-gradient { background: linear-gradient(to top, rgba(0, 0, 0, .82), rgba(0, 0, 0, .28) 56%, transparent); height: 43vw; inset: 0 0 auto; pointer-events: none; position: absolute; transition: opacity 420ms ease, transform 420ms ease; z-index: 3; }
+.story-revealed .gallery-gradient { opacity: 0; transform: translateY(-3%); }
 .snapshot-gallery p { background: #fffdf8; color: #b44017; font-family: Barlow, var(--font-barlow), Arial, sans-serif; font-size: clamp(1.1rem, 1.55vw, 1.35rem); grid-column: 1 / -1; line-height: 1.55; margin: 0; padding: clamp(28px, 4vw, 58px) 24px; text-align: center; }
 .snapshot-gallery p span { display: block; margin: 0 auto; max-width: 960px; }
-@media (max-width: 760px) { .snapshot-gallery { grid-template-columns: 1fr; }.snapshot-card { aspect-ratio: 1; padding: 48px; }.snapshot-gallery p { font-size: 1.08rem; grid-row: 3; padding: 32px 24px; text-align: left; }.snapshot-gallery p span { max-width: none; } }
+@media (max-width: 760px) { .snapshot-gallery { grid-template-columns: 1fr; }.snapshot-card { aspect-ratio: 1; padding: 52px; }.gallery-gradient { height: 200vw; }.snapshot-gallery p { font-size: 1.08rem; grid-row: 3; padding: 32px 24px; text-align: left; }.snapshot-gallery p span { max-width: none; } }
+@media (prefers-reduced-motion: reduce) { .gallery-gradient { transition: none; } }
