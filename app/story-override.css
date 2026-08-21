@@ -1,7 +1,7 @@
 /* Garden Guard's growing wildlife snapshot dataset. */
 .story { background: #d0dfc0; display: block; gap: 0; grid-template-columns: none; margin: 0; max-width: none; padding: 0; }
 .snapshot-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; max-width: none; width: 100%; }
-.snapshot-card { align-items: center; aspect-ratio: 1 / .86; display: flex; justify-content: center; margin: 0; overflow: hidden; padding: clamp(24px, 5vw, 84px); }
+.snapshot-card { align-items: center; aspect-ratio: 1 / .86; display: flex; justify-content: center; margin: 0; overflow: hidden; padding: clamp(40px, 6.5vw, 112px); }
 .snapshot-card-turkey { background: #d0dfc0; }
 .snapshot-card-possum { background: #f4e3a2; }
 .snapshot-card img { display: block; height: 100%; object-fit: cover; width: 100%; }
