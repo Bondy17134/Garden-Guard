@@ -1,7 +1,7 @@
 export default function Home() {
   return <main>
     <section className="hero" id="top">
-      <header className="hero-header"><a className="header-logo" href="#top" aria-label="Garden Guard home"><img src="/garden-guard-logo.png" alt="Garden Guard shield logo"/></a><nav className="hero-nav" aria-label="Primary navigation"><a href="#top">Home</a><a href="#story">How It Works</a><a href="/updates">Roadmap</a><a href="#about">About</a><a className="visit-project" href="/updates">Visit Project</a></nav></header>
+      <header className="hero-header"><nav className="hero-nav" aria-label="Primary navigation"><a href="#top">Home</a><a href="#story">How It Works</a><a className="header-logo" href="#top" aria-label="Garden Guard home"><img src="/garden-guard-logo.png" alt="Garden Guard shield logo"/></a><a href="/updates">Roadmap</a><a href="#about">About</a><a className="visit-project" href="/updates">Visit Project</a></nav></header>
       <div className="hero-content"><div className="copy"><p className="hero-status">Gold Coast · Active Prototype · 2026</p><h1>Garden<br/>Guard</h1><p className="hero-summary">AI wildlife monitoring that helps us understand what visits the garden — before deciding what to protect.</p><a className="button" href="/updates">Explore the project <span aria-hidden="true">&rarr;</span></a><p className="hero-note">Camera live <span aria-hidden="true">·</span> Dataset growing</p></div></div>
       <div className="monitoring-band" aria-hidden="true"><span className="band-label">FIELD MONITORING / 01</span><span className="band-line band-line-one"/><span className="band-line band-line-two"/><span className="band-point band-point-one"/><span className="band-point band-point-two"/><span className="band-grid"/></div>
     </section>
