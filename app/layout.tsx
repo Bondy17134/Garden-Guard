@@ -4,6 +4,7 @@ import "./globals.css";
 import "./hero-override.css";
 import "./hero-mobile.css";
 import "./story-override.css";
+import "./logo-override.css";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 export const metadata: Metadata = {

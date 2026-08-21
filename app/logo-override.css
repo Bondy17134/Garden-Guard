@@ -1,0 +1,2 @@
+/* Compact badge branding for the navigation and footer. */
+.brand{align-items:center;display:inline-flex;line-height:0}.brand img{display:block;height:58px;object-fit:contain;width:auto}footer .brand img{height:52px}@media(max-width:768px){.hero .brand img{height:44px}footer .brand img{height:42px}}
