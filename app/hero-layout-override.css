@@ -3,7 +3,7 @@
 .hero-header .header-logo { align-items: center; display: inline-flex; line-height: 0; }
 .hero-header .header-logo img { display: block; height: 64px; object-fit: contain; width: 64px; }
 .hero-nav a { letter-spacing: .06em; text-transform: uppercase; }
-.hero { background: #f8f7f1; border: 0; border-radius: 0; box-shadow: none; height: 100svh; margin: 0; min-height: 650px; }
+.hero { background: #f8f7f1 url("/hero-background.png") center / cover no-repeat; border: 0; border-radius: 0; box-shadow: none; height: 100svh; margin: 0; min-height: 650px; }
 .hero-header { max-width: none; padding: 8px clamp(32px, 3.5vw, 64px) 0; }
 
 .hero-content {
