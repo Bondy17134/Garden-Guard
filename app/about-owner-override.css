@@ -1,0 +1,100 @@
+/* Project-owner section: a clean, portrait-led editorial composition. */
+.about {
+  align-items: center;
+  background: #005c1f;
+  color: #f7f3e9;
+  gap: clamp(3rem, 8vw, 8rem);
+  grid-template-columns: minmax(13rem, 0.62fr) minmax(0, 1.38fr);
+  max-width: none;
+  padding: clamp(4.5rem, 8vw, 7.5rem) clamp(2rem, 8vw, 9rem);
+}
+
+.about .about-photo {
+  align-self: end;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  height: auto;
+  justify-self: center;
+  max-height: min(34rem, 62vw);
+  object-fit: contain;
+  outline: 0;
+  transform: none;
+  width: min(100%, 25rem);
+}
+
+.about .eyebrow,
+.about .social-links::before {
+  color: #fdb216;
+  font-family: var(--font-barlow), Arial, sans-serif;
+  font-weight: 700;
+}
+
+.about h2 {
+  color: #f7f3e9;
+  font-family: var(--font-anton), Impact, sans-serif;
+  font-size: clamp(2.7rem, 4.5vw, 5.5rem);
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 0.98;
+  margin: 0.45rem 0 1.6rem;
+}
+
+.about div > p:not(.eyebrow) {
+  color: rgba(247, 243, 233, 0.86);
+  font-family: var(--font-barlow), Arial, sans-serif;
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  line-height: 1.6;
+  margin: 0 0 0.55rem;
+  max-width: 46rem;
+}
+
+.about .social-links {
+  border-color: rgba(247, 243, 233, 0.35);
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+}
+
+.about .social-links .social {
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.about .social-links .social:focus-visible {
+  border-radius: 0.25rem;
+  outline: 2px solid #fdb216;
+  outline-offset: 0.3rem;
+}
+
+@media (max-width: 700px) {
+  .about {
+    gap: 2.25rem;
+    grid-template-columns: 1fr;
+    padding: 4.5rem 1.6rem;
+    text-align: center;
+  }
+
+  .about .about-photo {
+    max-height: 25rem;
+    width: min(80vw, 19rem);
+  }
+
+  .about h2 {
+    font-size: clamp(2.6rem, 11vw, 4.4rem);
+  }
+
+  .about div > p:not(.eyebrow) {
+    margin-inline: auto;
+  }
+
+  .about .social-links {
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about .social-links .social {
+    transition: none;
+  }
+}

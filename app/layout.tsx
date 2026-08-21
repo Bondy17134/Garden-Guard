@@ -8,6 +8,7 @@ import "./camera-showcase.css";
 import "./logo-override.css";
 import "./hero-color-override.css";
 import "./hero-layout-override.css";
+import "./about-owner-override.css";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 const anton = Anton({ variable: "--font-anton", subsets: ["latin"], weight: "400" });
