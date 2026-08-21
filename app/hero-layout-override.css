@@ -3,13 +3,14 @@
 .hero-header .header-logo { align-items: center; display: inline-flex; line-height: 0; }
 .hero-header .header-logo img { display: block; height: 72px; object-fit: contain; width: 72px; }
 .hero-nav a { letter-spacing: .06em; text-transform: uppercase; }
+.hero { border: 0; border-radius: 0; box-shadow: none; margin: 0; }
 
 .hero-content {
   align-items: end;
   column-gap: clamp(40px, 6vw, 120px);
   grid-template-columns: minmax(420px, 1fr) minmax(460px, 560px) max-content;
   max-width: none;
-  padding-bottom: clamp(64px, 8vw, 126px);
+  padding-bottom: 20px;
   padding-left: clamp(24px, 3.5vw, 64px);
   padding-right: clamp(24px, 3.5vw, 64px);
   padding-top: clamp(10px, 1vw, 40px);
