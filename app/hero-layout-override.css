@@ -6,15 +6,42 @@
 
 .hero-content {
   align-items: end;
-  grid-template-columns: minmax(320px, 1fr) minmax(280px, 440px);
-  column-gap: clamp(72px, 12vw, 240px);
+  column-gap: clamp(40px, 6vw, 120px);
+  grid-template-columns: minmax(420px, 1fr) minmax(460px, 560px) max-content;
+  max-width: none;
   padding-bottom: clamp(64px, 8vw, 126px);
+  padding-left: clamp(24px, 3.5vw, 64px);
+  padding-right: clamp(24px, 3.5vw, 64px);
   padding-top: clamp(10px, 1vw, 40px);
 }
 
 .hero-content .hero-summary {
   margin: 0 0 .45rem;
-  max-width: 440px;
+  max-width: 560px;
+}
+
+.hero-scroll {
+  align-items: center;
+  color: #14281a;
+  display: inline-flex;
+  font-family: Barlow, var(--font-barlow), Arial, sans-serif;
+  font-size: .78rem;
+  font-weight: 600;
+  gap: .6rem;
+  letter-spacing: .08em;
+  margin-bottom: .58rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero-scroll span { color: #b44017; font-size: 1.05rem; transition: transform .2s ease; }
+.hero-scroll:hover span { transform: translateY(3px); }
+.hero-scroll:focus-visible { border-radius: 4px; outline: 2px solid #b44017; outline-offset: 5px; }
+
+@media (max-width: 1100px) and (min-width: 701px) {
+  .hero-content { column-gap: clamp(28px, 4vw, 48px); grid-template-columns: minmax(310px, 1fr) minmax(330px, 440px); }
+  .hero-scroll { grid-column: 2; justify-self: start; margin-top: 6px; }
 }
 
 @media (max-width: 700px) {
@@ -23,4 +50,5 @@
   .hero-nav { flex: 1; gap: 10px 15px; justify-content: center !important; margin-top: 0; }
   .hero-content { align-items: start; gap: 28px; grid-template-columns: 1fr; padding-top: 32px; }
   .hero-content .hero-summary { margin: 0; max-width: none; }
+  .hero-scroll { margin: 0; }
 }
