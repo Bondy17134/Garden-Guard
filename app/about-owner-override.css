@@ -6,7 +6,7 @@
   gap: clamp(3rem, 8vw, 8rem);
   grid-template-columns: minmax(13rem, 0.62fr) minmax(0, 1.38fr);
   max-width: none;
-  padding: clamp(4.5rem, 8vw, 7.5rem) clamp(2rem, 8vw, 9rem) 0;
+  padding: clamp(2.75rem, 5vw, 4.75rem) clamp(2rem, 8vw, 9rem) 0;
 }
 
 .about .about-photo {
