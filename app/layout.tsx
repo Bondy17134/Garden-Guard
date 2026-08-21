@@ -5,6 +5,7 @@ import "./hero-override.css";
 import "./hero-mobile.css";
 import "./story-override.css";
 import "./logo-override.css";
+import "./hero-color-override.css";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 const anton = Anton({ variable: "--font-anton", subsets: ["latin"], weight: "400" });
