@@ -18,11 +18,11 @@
   display: block;
   height: auto;
   justify-self: center;
-  max-height: min(41rem, 68vw);
+  max-height: min(48rem, 76vw);
   object-fit: contain;
   outline: 0;
   transform: none;
-  width: min(100%, 29rem);
+  width: min(100%, 34rem);
 }
 
 .about .eyebrow,
