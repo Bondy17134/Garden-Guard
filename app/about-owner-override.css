@@ -6,7 +6,7 @@
   gap: clamp(3rem, 8vw, 8rem);
   grid-template-columns: minmax(13rem, 0.62fr) minmax(0, 1.38fr);
   max-width: none;
-  padding: clamp(4.5rem, 8vw, 7.5rem) clamp(2rem, 8vw, 9rem);
+  padding: clamp(4.5rem, 8vw, 7.5rem) clamp(2rem, 8vw, 9rem) 0;
 }
 
 .about .about-photo {
@@ -18,11 +18,11 @@
   display: block;
   height: auto;
   justify-self: center;
-  max-height: min(34rem, 62vw);
+  max-height: min(41rem, 68vw);
   object-fit: contain;
   outline: 0;
   transform: none;
-  width: min(100%, 25rem);
+  width: min(100%, 29rem);
 }
 
 .about .eyebrow,
