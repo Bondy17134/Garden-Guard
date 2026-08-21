@@ -1,24 +1,27 @@
 /* Header badge replaces the former text wordmark and removes the duplicate hero mark. */
 .hero-header .hero-nav { justify-content: space-between; width: 100%; }
 .hero-header .header-logo { align-items: center; display: inline-flex; line-height: 0; }
-.hero-header .header-logo img { display: block; height: 72px; object-fit: contain; width: 72px; }
+.hero-header .header-logo img { display: block; height: 64px; object-fit: contain; width: 64px; }
 .hero-nav a { letter-spacing: .06em; text-transform: uppercase; }
-.hero { border: 0; border-radius: 0; box-shadow: none; margin: 0; }
+.hero { background: #f8f7f1; border: 0; border-radius: 0; box-shadow: none; margin: 0; min-height: 650px; }
+.hero-header { max-width: none; padding: 8px clamp(32px, 3.5vw, 64px) 0; }
 
 .hero-content {
   align-items: end;
-  column-gap: clamp(40px, 6vw, 120px);
-  grid-template-columns: minmax(420px, 1fr) minmax(460px, 560px) max-content;
+  column-gap: clamp(48px, 7vw, 144px);
+  grid-template-columns: minmax(440px, .78fr) minmax(420px, .96fr) max-content;
   max-width: none;
-  padding-bottom: 20px;
-  padding-left: clamp(24px, 3.5vw, 64px);
-  padding-right: clamp(24px, 3.5vw, 64px);
-  padding-top: clamp(10px, 1vw, 40px);
+  padding: 30px clamp(32px, 3.5vw, 64px) 28px;
 }
 
+.hero h1 { font-size: clamp(6.4rem, 10.1vw, 10.8rem); line-height: .88; }
+
 .hero-content .hero-summary {
+  color: #14281a !important;
+  font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+  line-height: 1.55;
   margin: 0 0 .45rem;
-  max-width: 560px;
+  max-width: 540px;
 }
 
 .hero-scroll {
@@ -41,15 +44,19 @@
 .hero-scroll:focus-visible { border-radius: 4px; outline: 2px solid #b44017; outline-offset: 5px; }
 
 @media (max-width: 1100px) and (min-width: 701px) {
+  .hero { min-height: 620px; }
   .hero-content { column-gap: clamp(28px, 4vw, 48px); grid-template-columns: minmax(310px, 1fr) minmax(330px, 440px); }
+  .hero h1 { font-size: clamp(5.2rem, 10vw, 7.9rem); }
   .hero-scroll { grid-column: 2; justify-self: start; margin-top: 6px; }
 }
 
 @media (max-width: 700px) {
-  .hero-header .header-logo img { height: 58px; width: 58px; }
+  .hero { min-height: 0; }
+  .hero-header .header-logo img { height: 54px; width: 54px; }
   .hero-header { align-items: center; display: flex; }
   .hero-nav { flex: 1; gap: 10px 15px; justify-content: center !important; margin-top: 0; }
-  .hero-content { align-items: start; gap: 28px; grid-template-columns: 1fr; padding-top: 32px; }
+  .hero-content { align-items: start; gap: 28px; grid-template-columns: 1fr; padding: 42px 24px 48px; }
+  .hero h1 { font-size: clamp(4.2rem, 19vw, 6.2rem); line-height: .86; }
   .hero-content .hero-summary { margin: 0; max-width: none; }
   .hero-scroll { margin: 0; }
 }
